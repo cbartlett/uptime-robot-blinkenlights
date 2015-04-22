@@ -39,7 +39,7 @@ class Blinkenlight
   end
 
   def description
-    "#{hash['friendlyname']}\nStatus is currently: '#{status_name}'"
+    "#{hash['friendlyname']}\n\nStatus is currently: \"#{status_name}\""
   end
 
   def to_hash
