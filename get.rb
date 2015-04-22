@@ -1,6 +1,5 @@
 require 'json'
 require 'open-uri'
-require 'pry'
 require 'sinatra'
 
 class UptimeRobot
@@ -50,6 +49,10 @@ class Blinkenlight
       ledLabel: hash['friendlyname']
     }
   end
+end
+
+get '/' do
+  erb :index
 end
 
 get '/group/:token' do
